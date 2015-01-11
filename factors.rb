@@ -10,7 +10,7 @@ module Factors
   # Returns false otherwise.
   def self.is_prime? number
     return true if number == 2
-    return false if number < 4
+    return false if number < 3
     for divisor in 2..(Math.sqrt(number).to_i)
       return false if number%divisor == 0
     end
